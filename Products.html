@@ -1,172 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>Products</title>
 
-<style>
-a:visited { color: #808080; }
-a:link { color: #b3b3b3; }
-a { text-decoration: none; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="icon" type="image/png" href="Images/logoT.png">
+    <title>STGS | Products</title>
+
+    <link rel="stylesheet" href="CSS/CSS.css">
+    <link rel="icon" type="image/png" href="Images/logoT.png">
+
+<!-- <script src="Js/Js.js" defer></script>-->
+
 </head>
 
-<body bgcolor="#1a1a1a">
+<body>
 
-<header>
+    <header>
 
-<h1 align="center">
-<font face="Arial" color="#d9d9d9">
-<u>StraightCutGears</u>
-</font>
-</h1>
+        <img src="Images/logoT.png" alt="STGS Logo" class="logo">
 
-<table width="100%">
-<tr>
-<td align="center">
-<img src="Images/logoT.png" height="180">
-</td>
-</tr>
-</table>
+        <h1>STGS</h1>
 
-<nav align="center">
-<font face="Arial" color="#d9d9d9">
-<a href="Home.html">Home</a> |
-<a href="About.html">About Us</a> |
-<a href="News.html">Coming Soon</a> |
-<a href="Contact.html">Get In Touch</a>
-</font>
-</nav>
+        <p class="tagline">
+            Affordable Mods. Premium Feel.
+        </p>
 
-<h3 align="center">
-<font face="Arial" color="#b3b3b3">
-<i>Styling Performance</i>
-</font>
-</h3>
-
-<hr color="#444444" width="80%">
-
-</header>
+    </header>
 
 
-<table width="900" align="center" cellpadding="15" bgcolor="#2b2b2b">
+    <nav>
 
-<tr>
-<td align="center">
+        <a href="Home.html">Home</a>
 
-<h2>
-<font face="Arial" color="#ffffff" size="6">
-Our Featured Products
-</font>
-</h2>
+        <a href="products.html">Shop</a>
 
-</td>
-</tr>
+        <a href="about.html">About</a>
 
-</table>
+        <a href="contact.html">Contact</a>
 
+        <a href="News.html">News</a>
 
-<br>
+    </nav>
 
+    <h2 class="title">
+        Featured Accessories
+    </h2>
 
-<table width="900" align="center" cellpadding="15" bgcolor="#2b2b2b" border="0">
-
-<tr>
-
-<td align="center" bgcolor="#1a1a1a">
-<font face="Arial" color="#ffffff">
-
-<img src="Images/shift.png" height="180">
-<h3>Premium Shifter</h3>
-<p>Price: R150.00</p>
-<p><a href="#">Add to Cart</a></p>
-
-</font>
-</td>
-
-<td align="center" bgcolor="#1a1a1a">
-<font face="Arial" color="#ffffff">
-
-<img src="Images/brake.png" height="180">
-<h3>Performance Handbrake</h3>
-<p>Price: R420.00</p>
-<p><a href="#">Add to Cart</a></p>
-
-</font>
-</td>
-
-</tr>
-
-</table>
+    <p class="subtitle">
+        Easy-to-install accessories for cleaner interiors and better daily driving.
+    </p>
 
 
-<br>
+    <table class="products">
+
+        <tr>
+
+            <td class="product-card">
+
+                <img src="Images/shift.png" alt="Shift Knob">
+
+                <h3>
+                    Premium Shift Knob
+                </h3>
+
+                <p class="description">
+                    Weighted design with improved grip and sporty feel.
+                </p>
+
+                <p class="price">
+                    R150
+                </p>
+
+                <button onclick="addToCart()">
+                    Add To Cart
+                </button>
+
+            </td>
 
 
-<table width="900" align="center" cellpadding="15" bgcolor="#2b2b2b">
+            <td class="product-card">
 
-<tr>
+                <img src="Images/brake.png" alt="Handbrake">
 
-<td align="center" bgcolor="#1a1a1a">
-<font face="Arial" color="#ffffff">
+                <h3>
+                    Performance Handbrake
+                </h3>
 
-<img src="Images/mirrior.png" height="180">
-<h3>LED Rearview Mirror</h3>
-<p>Price: R275.00</p>
-<p><a href="#">Add to Cart</a></p>
+                <p class="description">
+                    Modern styling upgrade with comfortable grip.
+                </p>
 
-</font>
-</td>
+                <p class="price">
+                    R420
+                </p>
 
-<td align="center" bgcolor="#1a1a1a">
-<font face="Arial" color="#ffffff">
+                <button onclick="addToCart()">
+                    Add To Cart
+                </button>
 
-<img src="Images/wheel.png" height="180">
-<h3>Custom Steering Wheel</h3>
-<p>Price: R500.00</p>
-<p><a href="#">Add to Cart</a></p>
-
-</font>
-</td>
-
-</tr>
-
-</table>
+            </td>
 
 
-<br>
+            <td class="product-card">
+
+                <img src="Images/mirrior.png" alt="Mirror">
+
+                <h3>
+                    LED Rearview Mirror
+                </h3>
+
+                <p class="description">
+                    Adds visibility and modern cabin lighting.
+                </p>
+
+                <p class="price">
+                    R275
+                </p>
+
+                <button onclick="addToCart()">
+                    Add To Cart
+                </button>
+
+            </td>
+
+        </tr>
+
+    </table>
+
+    <table class="products">
+
+        <tr>
+
+            <td class="product-card">
+
+                <img src="Images/wheel.png" alt="Steering Wheel">
+
+                <h3>
+                    Steering Wheel Cover
+                </h3>
+
+                <p class="description">
+                    Extra grip and comfort for daily driving.
+                </p>
+
+                <p class="price">
+                    R500
+                </p>
+
+                <button onclick="addToCart()">
+                    Add To Cart
+                </button>
+
+            </td>
 
 
-<table width="900" align="center" cellpadding="15" bgcolor="#2b2b2b">
+            <td class="product-card">
 
-<tr>
+                <img src="Images/lights.png" alt="Ambient Lights">
 
-<td align="center" bgcolor="#1a1a1a">
+                <h3>
+                    LED Ambient Lights
+                </h3>
 
-<font face="Arial" color="#ffffff">
+                <p class="description">
+                    Custom interior lighting with easy installation.
+                </p>
 
-<img src="Images/lights.png" height="180">
-<h3>LED Ambient Lights</h3>
-<p>Price: R150.00</p>
-<p><a href="#">Add to Cart</a></p>
+                <p class="price">
+                    R150
+                </p>
 
-</font>
+                <button onclick="addToCart()">
+                    Add To Cart
+                </button>
 
-</td>
-
-</tr>
-
-</table>
+            </td>
 
 
-<br><br>
+            <td class="product-card">
 
-<footer align="center">
-<font face="Arial" color="#808080">
-&copy; ST10127401
-</font>
-</footer>
+                <img src="Images/mount.png" alt="Phone Mount">
+
+                <h3>
+                    Magnetic Phone Mount
+                </h3>
+
+                <p class="description">
+                    Keep navigation visible while driving safely.
+                </p>
+
+                <p class="price">
+                    R199
+                </p>
+
+                <button onclick="addToCart()">
+                    Add To Cart
+                </button>
+
+            </td>
+
+        </tr>
+
+    </table>
+
+    <h2 class="title">
+        Why Customers Choose STGS
+    </h2>
+
+    <table class="why-us">
+
+        <tr>
+
+            <td class="why-card">
+
+                <h3>
+                    Easy DIY Installs
+                </h3>
+
+                <p>
+                    No expensive workshop visits needed.
+                </p>
+
+            </td>
+
+
+            <td class="why-card">
+
+                <h3>
+                    Affordable Pricing
+                </h3>
+
+                <p>
+                    Clean upgrades without overspending.
+                </p>
+
+            </td>
+
+
+            <td class="why-card">
+
+                <h3>
+                    Built For Daily Drivers
+                </h3>
+
+                <p>
+                    Perfect for everyday comfort and style.
+                </p>
+
+            </td>
+
+        </tr>
+
+    </table>
+
+    <table class="cta">
+
+        <tr>
+
+            <td>
+
+                <h2>
+                    Upgrade Your Interior Today
+                </h2>
+
+                <a href="contact.html" class="button-white">
+                    Contact Us
+                </a>
+
+            </td>
+
+        </tr>
+
+    </table>
+
+
+    <footer>
+
+        <p>
+            © STGS | ST10127401
+        </p>
+
+    </footer>
 
 </body>
+
 </html>
