@@ -127,7 +127,6 @@
 ### Added:
 
 * External CSS linking
-* External JavaScript linking
 * Consistent reusable classes
 * Better HTML structure
 * Improved page organization
